@@ -9,4 +9,14 @@
       <initValue>'www.staging.myinterviewpractice.com'</initValue>
       <name>URL</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'pds@demo.com'</initValue>
+      <name>User1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Test@1234'</initValue>
+      <name>Password1</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
