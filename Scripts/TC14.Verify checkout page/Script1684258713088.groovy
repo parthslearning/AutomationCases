@@ -27,9 +27,51 @@ WebUI.click(findTestObject('OverflowMenu/Btn_OverFlow'))
 
 WebUI.click(findTestObject('OverflowMenu/Pricing'))
 
-WebUI.click(findTestObject('Pricing/Btn_1month'))
+WebUI.click(findTestObject('Pricing/Btn_ChoosePlus3Months'))
 
-WebUI.click(findTestObject('Pricing/Btn_6months'))
+WebUI.verifyElementPresent(findTestObject('SignUp/Verify_SignUpPage'), 1)
 
-WebUI.click(findTestObject('Pricing/Btn_Lifietime'))
+String randomNumber = Math.abs(new Random().nextInt() % 30) + 1
+
+println(randomNumber)
+
+randomEmail = (('test' + randomNumber) + '@mailinator.com')
+
+println(randomEmail)
+
+WebUI.sendKeys(findTestObject('SignUp/Input_Email'), randomEmail)
+
+WebUI.click(findTestObject('SignUp/Btn_ContinueEmailSignUp'))
+
+String randomName = Math.abs(new Random().nextInt() % 30) + 1
+
+randomName = ('Test' + randomName)
+
+println(randomName)
+
+WebUI.sendKeys(findTestObject('SignUp/Input_AccountName'), randomName)
+
+WebUI.sendKeys(findTestObject('SignUp/Input_AccountPassword'), 'Automation@1234')
+
+WebUI.click(findTestObject('SignUp/Btn_ContinueStep1'))
+
+WebUI.click(findTestObject('SignUp/Btn_SelectPlanStep2'))
+
+WebUI.click(findTestObject('SignUp/Btn_CheckoutPayPal'))
+
+WebUI.sendKeys(findTestObject('SignUp/Input_PaypalEmail'), GlobalVariable.PayPalEmail)
+
+WebUI.click(findTestObject('SignUp/Btn_SubmitPayPalEmail'))
+
+WebUI.sendKeys(findTestObject('SignUp/Input_PayPalPassword'), GlobalVariable.PayPalPassword)
+
+WebUI.click(findTestObject('SignUp/Btn_SubmitPayPalPassword'))
+
+WebUI.waitForPageLoad(2)
+
+WebUI.click(findTestObject('SignUp/Btn_CompletePurchase'))
+
+WebUI.waitForAlert(15)
+
+WebUI.click(findTestObject('SignUp/Btn_StartPracticing'))
 

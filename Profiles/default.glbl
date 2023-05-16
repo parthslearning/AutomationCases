@@ -19,4 +19,14 @@
       <initValue>'Test@1234'</initValue>
       <name>Password1</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'sb-47ai6e451036@personal.example.com'</initValue>
+      <name>PayPalEmail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'\rwu]4&lt;K/:'</initValue>
+      <name>PayPalPassword</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

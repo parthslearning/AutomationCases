@@ -17,19 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
-
-WebUI.navigateToUrl(GlobalVariable.URL)
-
-WebUI.click(findTestObject('OverflowMenu/Btn_OverFlow'))
-
-WebUI.click(findTestObject('OverflowMenu/Pricing'))
-
-WebUI.click(findTestObject('Pricing/Btn_1month'))
-
-WebUI.click(findTestObject('Pricing/Btn_6months'))
-
-WebUI.click(findTestObject('Pricing/Btn_Lifietime'))
-
+String randomName = Math.abs(new Random().nextInt() % 30) + 1
+randomName =   "Test" + randomName
+println(randomName)

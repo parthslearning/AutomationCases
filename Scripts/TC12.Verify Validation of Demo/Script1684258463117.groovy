@@ -27,9 +27,27 @@ WebUI.click(findTestObject('OverflowMenu/Btn_OverFlow'))
 
 WebUI.click(findTestObject('OverflowMenu/Pricing'))
 
-WebUI.click(findTestObject('Pricing/Btn_1month'))
+WebUI.click(findTestObject('Pricing/Btn_BookDemo'))
 
-WebUI.click(findTestObject('Pricing/Btn_6months'))
+WebUI.verifyTextPresent('Book a Demo', false)
 
-WebUI.click(findTestObject('Pricing/Btn_Lifietime'))
+WebUI.delay(10)
+
+WebUI.click(findTestObject('BookDemo/btn_SubmitDemoRequest'))
+
+if (true) {
+    WebUI.verifyTextPresent('Please enter your name', false)
+
+    WebUI.verifyTextPresent('Enter your email address.', false)
+
+    WebUI.verifyTextPresent('Enter your organization name', false)
+
+    WebUI.verifyTextPresent('Please select number of licenses', false)
+
+    WebUI.verifyTextPresent('Enter your phone number', false)
+
+    WebUI.verifyTextPresent('Please click on the reCAPTCHA box', false)
+
+    WebUI.verifyTextPresent('Please click on the reCAPTCHA box', false)
+}
 

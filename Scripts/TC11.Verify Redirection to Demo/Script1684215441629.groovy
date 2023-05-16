@@ -27,9 +27,7 @@ WebUI.click(findTestObject('OverflowMenu/Btn_OverFlow'))
 
 WebUI.click(findTestObject('OverflowMenu/Pricing'))
 
-WebUI.click(findTestObject('Pricing/Btn_1month'))
+WebUI.click(findTestObject('Pricing/Btn_BookDemo'))
 
-WebUI.click(findTestObject('Pricing/Btn_6months'))
-
-WebUI.click(findTestObject('Pricing/Btn_Lifietime'))
+WebUI.verifyTextPresent('Book a Demo', false)
 
