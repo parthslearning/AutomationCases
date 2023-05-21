@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Btn_StartPracticing</name>
+   <name>Btn_ClickHerePayPalLoading</name>
    <tag></tag>
-   <elementGuidId>7cdbbd80-3b8a-4373-aa90-e5086ef6ced0</elementGuidId>
+   <elementGuidId>745a34f1-9a39-4ded-a94b-51cd22d9bf1c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@id='red_dash']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>
-wu]4&lt;K/:
-wu]4&lt;K/:</value>
+         <value>//a[contains(text(),'click here')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
