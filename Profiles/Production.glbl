@@ -6,7 +6,17 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'www.staging.myinterviewpractice.com'</initValue>
+      <initValue>'www.myinterviewpractice.com'</initValue>
       <name>URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'raj@demo.com'</initValue>
+      <name>User1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Test@1234'</initValue>
+      <name>Password1</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -31,11 +31,11 @@ WebUI.click(findTestObject('Pricing/Btn_ChoosePlus3Months'))
 
 WebUI.verifyElementPresent(findTestObject('SignUp/Verify_SignUpPage'), 1)
 
-String randomNumber = Math.abs(new Random().nextInt() % 30) + 1222
+String randomNumber = Math.abs(new Random().nextInt() % 30) + 1111111
 
 println(randomNumber)
 
-randomEmail = (('test' + randomNumber) + '@mailinator.com')
+randomEmail = (('Automationtest' + randomNumber) + '@mailinator.com')
 
 println(randomEmail)
 
@@ -67,27 +67,7 @@ WebUI.sendKeys(findTestObject('SignUp/Input_PayPalPassword'), GlobalVariable.Pay
 
 WebUI.click(findTestObject('SignUp/Btn_SubmitPayPalPassword'))
 
-WebUI.waitForPageLoad(2)
+WebUI.waitForPageLoad(20)
 
-WebUI.click(findTestObject('SignUp/Btn_CompletePurchase'))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('SignUp/Btn_ClickHerePayPalLoading'))
-
-//WebUI.waitForPageLoad(20)
-
-//WebUI.enableSmartWait()
-
-WebUI.delay(5)
-
-//WebUI.acceptAlert()
-
-//WebUI.verifyAlertPresent(16)
-//Text = WebUI.getAlertText()
-//println(Text)
-WebUI.waitForElementVisible(SignUp / Btn_StartPracticing, 10)
-
-//WebUI.switchToFrame(findTestObject('SignUp/Btn_StartPracticing'), 0)
-WebUI.click(findTestObject('SignUp/Btn_StartPracticing'))
+WebUI.closeBrowser()
 

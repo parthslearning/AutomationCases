@@ -25,12 +25,13 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.click(findTestObject('OverflowMenu/Btn_OverFlow'))
 
-WebUI.click(findTestObject('OverflowMenu/Blog'))
+WebUI.click(findTestObject('OverflowMenu/Pricing'))
 
-CurrentUrL = WebUI.getUrl()
+WebUI.click(findTestObject('Pricing/Btn_1month'))
 
-//println(CurrentUrL)
-ExpectedUrl = 'https://staging.myinterviewpractice.com/blog/'
+WebUI.click(findTestObject('Pricing/Btn_6months'))
 
-WebUI.verifyEqual(CurrentUrL, ExpectedUrl)
+WebUI.click(findTestObject('Pricing/Btn_Lifietime'))
+
+WebUI.closeBrowser()
 

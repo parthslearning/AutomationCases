@@ -31,3 +31,5 @@ WebUI.click(findTestObject('Pricing/Btn_BookDemo'))
 
 WebUI.verifyTextPresent('Book a Demo', false)
 
+WebUI.closeBrowser()
+

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC9.Verify Membership Details</name>
+   <name>TC01.Verify Blog without Login</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a6e82936-e9f6-46a5-8241-aa849743344d</testCaseGuid>
+   <testCaseGuid>4ac55afe-c95c-49c1-bc5d-447af081ee66</testCaseGuid>
 </TestCaseEntity>

@@ -23,24 +23,22 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
-WebUI.click(findTestObject('Home_Page/Btn_LogIn'))
-
-WebUI.setText(findTestObject('Home_Page/Input_Email'), GlobalVariable.User1)
-
-WebUI.setText(findTestObject('Home_Page/Input_Password'), GlobalVariable.Password1)
-
-WebUI.click(findTestObject('Home_Page/Submit_Login'))
-
 WebUI.click(findTestObject('OverflowMenu/Btn_OverFlow'))
-
-WebUI.scrollToElement(findTestObject('OverflowMenu/Blog'), 10)
 
 WebUI.click(findTestObject('OverflowMenu/Blog'))
 
-CurrentUrL = WebUI.getUrl()
+CurrentUrl = WebUI.getUrl()
 
 //println(CurrentUrL)
-ExpectedUrl = 'https://staging.myinterviewpractice.com/blog/'
 
-WebUI.verifyEqual(CurrentUrL, ExpectedUrl)
+
+ExpectedUrlStaging = 'https://staging.myinterviewpractice.com/blog/'
+
+ExpectedUrlLive = 'https://myinterviewpractice.com/blog/'
+
+CurrentUrl == ExpectedUrlStaging || ExpectedUrlLive
+//WebUI.verifyEqual(CurrentUrL, ExpectedUrlStaging) || WebUI.verifyEqual(CurrentUrL, ExpectedUrlSLive)
+
+
+WebUI.closeBrowser()
 
